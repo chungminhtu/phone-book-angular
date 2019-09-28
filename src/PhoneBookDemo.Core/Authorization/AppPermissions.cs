@@ -43,6 +43,9 @@
 
         public const string Pages_Administration_UiCustomization = "Pages.Administration.UiCustomization";
 
+        public const string Pages_Tenant_PhoneBook = "Pages.Tenant.PhoneBook";
+        public const string Pages_Tenant_PhoneBook_CreatePerson = "Pages.Tenant.PhoneBook.CreatePerson";
+
         //TENANT-SPECIFIC PERMISSIONS
 
         public const string Pages_Tenant_Dashboard = "Pages.Tenant.Dashboard";
