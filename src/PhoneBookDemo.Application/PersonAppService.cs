@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PhoneBookDemo
 {
@@ -36,6 +37,11 @@ namespace PhoneBookDemo
                 .ToList();
 
             return new ListResultDto<PersonListDto>(ObjectMapper.Map<List<PersonListDto>>(people));
+        }
+        public async Task CreatePerson(CreatePersonInput input)
+        {
+            var person = ObjectMapper.Map<Person>(input);
+            await _personRepository.InsertAsync(person);
         }
 
     }

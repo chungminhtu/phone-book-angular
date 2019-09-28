@@ -1,9 +1,12 @@
-﻿using PhoneBookDemo.Dto;
+﻿using Abp.Runtime.Validation;
+using PhoneBookDemo.Dto;
 using PhoneBookDemo.PhoneBook;
 using Shouldly;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace PhoneBookDemo.Tests.People
@@ -41,6 +44,41 @@ namespace PhoneBookDemo.Tests.People
             persons.Items.Count.ShouldBe(1);
             persons.Items[0].Name.ShouldBe("Douglas");
             persons.Items[0].Surname.ShouldBe("Adams");
+        }
+        [Fact]
+        public async Task Should_Create_Person_With_Valid_Arguments()
+        {
+            //Act
+            await _personAppService.CreatePerson(
+                new CreatePersonInput
+                {
+                    Name = "John",
+                    Surname = "Nash",
+                    EmailAddress = "john.nash@abeautifulmind.com"
+                });
+
+            //Assert
+            UsingDbContext(
+                context =>
+                {
+                    var john = context.Persons.FirstOrDefault(p => p.EmailAddress == "john.nash@abeautifulmind.com");
+                    john.ShouldNotBe(null);
+                    john.Name.ShouldBe("John");
+                });
+        }
+        [Fact]
+        public async Task Should_Not_Create_Person_With_Invalid_Arguments()
+        {
+            //Act and Assert
+            await Assert.ThrowsAsync<AbpValidationException>(
+                async () =>
+                {
+                    await _personAppService.CreatePerson(
+                new CreatePersonInput
+                                {
+                                    Name = "John"
+                                });
+                });
         }
     }
 }

@@ -7,6 +7,8 @@ import { CountoModule } from 'angular2-counto';
 import { ModalModule, TabsModule, TooltipModule, BsDropdownModule, PopoverModule } from 'ngx-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PhoneBookComponent } from './phonebook/phonebook.component';
+import { CreatePersonModalComponent } from './phonebook/create-person-modal.component';
+
 
 import { MainRoutingModule } from './main-routing.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -34,7 +36,8 @@ NgxBootstrapDatePickerConfigService.registerNgxBootstrapDatePickerLocales();
     ],
     declarations: [
         DashboardComponent,
-        PhoneBookComponent
+        PhoneBookComponent,
+        CreatePersonModalComponent
     ],
     providers: [
         { provide: BsDatepickerConfig, useFactory: NgxBootstrapDatePickerConfigService.getDatepickerConfig },
