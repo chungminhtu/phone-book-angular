@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Abp.Domain.Entities.Auditing;
+using System.Collections.Generic;
 
 namespace PhoneBookDemo.EntityFrameworkCore.PhoneBook
 {
@@ -21,5 +22,7 @@ namespace PhoneBookDemo.EntityFrameworkCore.PhoneBook
 
         [MaxLength(MaxEmailAddressLength)]
         public virtual string EmailAddress { get; set; }
+
+        public virtual ICollection<Phone> Phones { get; set; }
     }
 }

@@ -20,6 +20,8 @@ namespace PhoneBookDemo.EntityFrameworkCore
         /* Define an IDbSet for each entity of the application */
         public virtual DbSet<Person> Persons { get; set; }
 
+        public virtual DbSet<Phone> Phones { get; set; }
+
         public virtual DbSet<BinaryObject> BinaryObjects { get; set; }
 
         public virtual DbSet<Friendship> Friendships { get; set; }
@@ -33,6 +35,7 @@ namespace PhoneBookDemo.EntityFrameworkCore
         public virtual DbSet<Invoice> Invoices { get; set; }
 
         public virtual DbSet<PersistedGrantEntity> PersistedGrants { get; set; }
+
 
         public PhoneBookDemoDbContext(DbContextOptions<PhoneBookDemoDbContext> options)
             : base(options)

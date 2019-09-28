@@ -1156,6 +1156,31 @@ namespace PhoneBookDemo.Migrations
                     b.ToTable("PbPersons");
                 });
 
+            modelBuilder.Entity("PhoneBookDemo.EntityFrameworkCore.PhoneBook.Phone", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasMaxLength(16);
+
+                    b.Property<int>("PersonId");
+
+                    b.Property<byte>("Type");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PersonId");
+
+                    b.ToTable("PbPhones");
+                });
+
             modelBuilder.Entity("PhoneBookDemo.Friendships.Friendship", b =>
                 {
                     b.Property<long>("Id")
@@ -1536,6 +1561,14 @@ namespace PhoneBookDemo.Migrations
                     b.HasOne("PhoneBookDemo.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
+                });
+
+            modelBuilder.Entity("PhoneBookDemo.EntityFrameworkCore.PhoneBook.Phone", b =>
+                {
+                    b.HasOne("PhoneBookDemo.EntityFrameworkCore.PhoneBook.Person", "Person")
+                        .WithMany("Phones")
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("PhoneBookDemo.MultiTenancy.Payments.SubscriptionPayment", b =>

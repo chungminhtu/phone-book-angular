@@ -138,6 +138,9 @@ namespace PhoneBookDemo
             /* ADD YOUR OWN CUSTOM AUTOMAPPER MAPPINGS HERE */
             configuration.CreateMap<Person, PersonListDto>();
             configuration.CreateMap<CreatePersonInput, Person>();
+            configuration.CreateMap<Phone, PhoneInPersonListDto>();
+            configuration.CreateMap<AddPhoneInput, Phone>();
+
 
 
         }
