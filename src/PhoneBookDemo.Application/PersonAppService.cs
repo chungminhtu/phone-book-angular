@@ -48,5 +48,10 @@ namespace PhoneBookDemo
             var person = ObjectMapper.Map<Person>(input);
             await _personRepository.InsertAsync(person);
         }
+
+        public async Task DeletePerson(EntityDto input)
+        {
+            await _personRepository.DeleteAsync(input.Id);
+        }
     }
 }

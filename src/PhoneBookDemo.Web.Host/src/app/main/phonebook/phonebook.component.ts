@@ -5,6 +5,7 @@ import { PersonServiceProxy, PersonListDto, ListResultDtoOfPersonListDto } from 
 
 @Component({
     templateUrl: './phonebook.component.html',
+    styleUrls: ['./phonebook.component.less'],
     animations: [appModuleAnimation()]
 })
 export class PhoneBookComponent extends AppComponentBase implements OnInit {
@@ -28,4 +29,21 @@ export class PhoneBookComponent extends AppComponentBase implements OnInit {
             this.people = result.items;
         });
     }
+
+    deletePerson(person: PersonListDto): void {
+        this.message.confirm(
+            this.l('AreYouSureToDeleteThePerson', person.name),
+            isConfirmed => {
+                if (isConfirmed) {
+                    this._personService.deletePerson(person.id).subscribe(() => {
+                        this.notify.info(this.l('SuccessfullyDeleted'));
+                        _.remove(this.people, person);
+                    });
+                }
+            }
+        );
+    } 
+
+
+
 }

@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { appModuleAnimation } from '../../../shared/animations/routerTransition';
 
 
 
@@ -10,3 +11,5 @@ import { CommonModule } from '@angular/common';
   ]
 })
 export class PhonebookModule { }
+
+
