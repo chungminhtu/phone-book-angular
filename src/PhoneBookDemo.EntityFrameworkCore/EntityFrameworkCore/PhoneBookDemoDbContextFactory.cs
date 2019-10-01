@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using PhoneBookDemo.Configuration;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Web;
 
 namespace PhoneBookDemo.EntityFrameworkCore

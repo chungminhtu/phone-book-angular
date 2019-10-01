@@ -5,6 +5,7 @@ using Abp.Localization;
 using Abp.Notifications;
 using PhoneBookDemo.Authorization.Users;
 using PhoneBookDemo.MultiTenancy;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Notifications
 {

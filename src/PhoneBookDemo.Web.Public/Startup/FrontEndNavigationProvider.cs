@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Localization;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Web.Public.Startup
 {

@@ -5,6 +5,7 @@ using Abp.MultiTenancy;
 using Abp.Net.Mail;
 using Microsoft.EntityFrameworkCore;
 using PhoneBookDemo.EntityFrameworkCore;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Migrations.Seed.Host
 {

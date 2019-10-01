@@ -1,7 +1,9 @@
-﻿import { Component, Injector, OnInit } from '@angular/core';
+﻿import { Component, Injector, OnInit, ViewChild } from '@angular/core';
 import { AppComponentBase } from '@shared/common/app-component-base';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
 import { PersonServiceProxy, PersonListDto, ListResultDtoOfPersonListDto } from '@shared/service-proxies/service-proxies';
+import { CreatePersonModalComponent } from './create-person-modal.component';
+import * as _ from 'lodash';
 
 @Component({
     templateUrl: './phonebook.component.html',
@@ -9,6 +11,8 @@ import { PersonServiceProxy, PersonListDto, ListResultDtoOfPersonListDto } from 
     animations: [appModuleAnimation()]
 })
 export class PhoneBookComponent extends AppComponentBase implements OnInit {
+
+    @ViewChild("createPersonModal", { static: false }) createPersonModal: CreatePersonModalComponent;
 
     people: PersonListDto[] = [];
     filter: string = '';
@@ -22,6 +26,18 @@ export class PhoneBookComponent extends AppComponentBase implements OnInit {
 
     ngOnInit(): void {
         this.getPeople();
+    }
+
+    createPerson() {
+        this.createPersonModal.show();
+    }
+
+    //editPerson(id: number) {
+    //    this.createPersonModal.show(id);
+    //}
+
+    editPerson() {
+        this.createPersonModal.show();
     }
 
     getPeople(): void {
@@ -42,7 +58,7 @@ export class PhoneBookComponent extends AppComponentBase implements OnInit {
                 }
             }
         );
-    } 
+    }
 
 
 

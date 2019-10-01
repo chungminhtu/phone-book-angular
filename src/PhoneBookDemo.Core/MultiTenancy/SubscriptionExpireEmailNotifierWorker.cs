@@ -9,6 +9,7 @@ using Abp.Threading.Timers;
 using Abp.Timing;
 using PhoneBookDemo.Authorization.Users;
 using PhoneBookDemo.Configuration;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.MultiTenancy
 {

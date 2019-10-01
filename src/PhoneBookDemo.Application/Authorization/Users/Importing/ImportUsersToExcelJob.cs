@@ -18,6 +18,7 @@ using PhoneBookDemo.Authorization.Roles;
 using PhoneBookDemo.Authorization.Users.Dto;
 using PhoneBookDemo.Authorization.Users.Importing.Dto;
 using PhoneBookDemo.Notifications;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Storage;
 
 namespace PhoneBookDemo.Authorization.Users.Importing

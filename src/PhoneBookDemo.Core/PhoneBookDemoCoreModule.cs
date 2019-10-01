@@ -27,6 +27,7 @@ using PhoneBookDemo.Localization;
 using PhoneBookDemo.MultiTenancy;
 using PhoneBookDemo.Net.Emailing;
 using PhoneBookDemo.Notifications;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo
 {

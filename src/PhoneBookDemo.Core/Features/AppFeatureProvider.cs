@@ -2,6 +2,7 @@
 using Abp.Localization;
 using Abp.Runtime.Validation;
 using Abp.UI.Inputs;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Features
 {

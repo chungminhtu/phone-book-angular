@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using PhoneBookDemo.Configuration;
 using PhoneBookDemo.EntityFrameworkCore;
 using PhoneBookDemo.Migrator.DependencyInjection;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Migrator
 {

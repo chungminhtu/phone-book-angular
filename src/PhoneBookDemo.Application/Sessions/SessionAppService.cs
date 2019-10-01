@@ -8,6 +8,7 @@ using Abp.Runtime.Session;
 using Microsoft.EntityFrameworkCore;
 using PhoneBookDemo.Editions;
 using PhoneBookDemo.MultiTenancy.Payments;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Sessions.Dto;
 using PhoneBookDemo.UiCustomization;
 

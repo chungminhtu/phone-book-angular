@@ -13,6 +13,7 @@ using Abp.Zero.Ldap.Configuration;
 using PhoneBookDemo.Authorization;
 using PhoneBookDemo.Configuration.Host.Dto;
 using PhoneBookDemo.Configuration.Tenants.Dto;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Security;
 using PhoneBookDemo.Storage;
 using PhoneBookDemo.Timing;

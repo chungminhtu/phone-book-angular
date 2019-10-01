@@ -22,6 +22,7 @@ using Microsoft.IdentityModel.Tokens;
 using PhoneBookDemo.Chat;
 using PhoneBookDemo.Configuration;
 using PhoneBookDemo.EntityFrameworkCore;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Startup;
 using PhoneBookDemo.Web.Authentication.JwtBearer;
 using PhoneBookDemo.Web.Authentication.TwoFactor;

@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using PhoneBookDemo.Authorization.Roles;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Security;
 
 namespace PhoneBookDemo.Authorization.Users

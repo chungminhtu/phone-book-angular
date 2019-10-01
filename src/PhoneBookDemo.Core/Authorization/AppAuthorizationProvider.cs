@@ -2,6 +2,7 @@
 using Abp.Configuration.Startup;
 using Abp.Localization;
 using Abp.MultiTenancy;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Authorization
 {

@@ -8,6 +8,7 @@ using Abp.Threading;
 using Microsoft.AspNetCore.Identity;
 using PhoneBookDemo.Authorization.Users;
 using PhoneBookDemo.MultiTenancy;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo
 {

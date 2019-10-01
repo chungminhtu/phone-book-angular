@@ -6,7 +6,6 @@ using Abp.Extensions;
 using Microsoft.EntityFrameworkCore;
 using PhoneBookDemo.Authorization;
 using PhoneBookDemo.Dto;
-using PhoneBookDemo.EntityFrameworkCore.PhoneBook;
 using PhoneBookDemo.PhoneBook;
 using System;
 using System.Collections.Generic;

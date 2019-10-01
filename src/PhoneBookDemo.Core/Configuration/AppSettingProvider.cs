@@ -4,6 +4,7 @@ using Abp.Configuration;
 using Abp.Net.Mail;
 using Abp.Zero.Configuration;
 using Microsoft.Extensions.Configuration;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Configuration
 {

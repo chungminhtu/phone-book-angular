@@ -21,6 +21,7 @@ using System.Diagnostics;
 using Abp.Runtime.Session;
 using Abp.UI;
 using PhoneBookDemo.MultiTenancy.Payments;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.MultiTenancy
 {

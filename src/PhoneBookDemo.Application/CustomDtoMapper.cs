@@ -23,7 +23,6 @@ using PhoneBookDemo.Chat.Dto;
 using PhoneBookDemo.Dto;
 using PhoneBookDemo.Editions;
 using PhoneBookDemo.Editions.Dto;
-using PhoneBookDemo.EntityFrameworkCore.PhoneBook;
 using PhoneBookDemo.Friendships;
 using PhoneBookDemo.Friendships.Cache;
 using PhoneBookDemo.Friendships.Dto;
@@ -35,6 +34,7 @@ using PhoneBookDemo.MultiTenancy.Payments;
 using PhoneBookDemo.MultiTenancy.Payments.Dto;
 using PhoneBookDemo.Notifications.Dto;
 using PhoneBookDemo.Organizations.Dto;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Sessions.Dto;
 
 

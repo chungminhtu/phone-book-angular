@@ -9,6 +9,7 @@ using Abp.Localization;
 using PhoneBookDemo.Authorization.Users;
 using PhoneBookDemo.Dto;
 using PhoneBookDemo.MultiTenancy;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Storage;
 
 namespace PhoneBookDemo.Gdpr

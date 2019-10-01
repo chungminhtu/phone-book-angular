@@ -2,6 +2,7 @@
 using Abp.Localization;
 using Abp.Notifications;
 using PhoneBookDemo.Authorization;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Notifications
 {

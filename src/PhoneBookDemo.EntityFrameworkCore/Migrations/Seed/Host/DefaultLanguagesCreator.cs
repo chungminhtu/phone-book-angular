@@ -3,6 +3,7 @@ using System.Linq;
 using Abp.Localization;
 using Microsoft.EntityFrameworkCore;
 using PhoneBookDemo.EntityFrameworkCore;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Migrations.Seed.Host
 {

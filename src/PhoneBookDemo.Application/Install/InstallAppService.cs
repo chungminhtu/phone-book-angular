@@ -24,6 +24,7 @@ using PhoneBookDemo.Migrations.Seed;
 using PhoneBookDemo.Migrations.Seed.Host;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Install
 {

@@ -6,11 +6,11 @@ using PhoneBookDemo.Authorization.Roles;
 using PhoneBookDemo.Authorization.Users;
 using PhoneBookDemo.Chat;
 using PhoneBookDemo.Editions;
-using PhoneBookDemo.EntityFrameworkCore.PhoneBook;
 using PhoneBookDemo.Friendships;
 using PhoneBookDemo.MultiTenancy;
 using PhoneBookDemo.MultiTenancy.Accounting;
 using PhoneBookDemo.MultiTenancy.Payments;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Storage;
 
 namespace PhoneBookDemo.EntityFrameworkCore

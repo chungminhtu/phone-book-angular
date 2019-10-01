@@ -8,6 +8,7 @@ using Abp.Threading;
 using Abp.UI;
 using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
 using PhoneBookDemo.Editions;
+using PhoneBookDemo.PhoneBook;
 using Stripe;
 
 namespace PhoneBookDemo.MultiTenancy.Payments.Stripe

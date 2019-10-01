@@ -12,6 +12,7 @@ using PhoneBookDemo.Test.Base;
 using NSubstitute;
 using Shouldly;
 using Xunit;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Tests.Localization
 {

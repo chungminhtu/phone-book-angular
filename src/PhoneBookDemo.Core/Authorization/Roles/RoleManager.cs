@@ -14,6 +14,7 @@ using Abp.Zero.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using PhoneBookDemo.Authorization.Users;
+using PhoneBookDemo.PhoneBook;
 
 namespace PhoneBookDemo.Authorization.Roles
 {

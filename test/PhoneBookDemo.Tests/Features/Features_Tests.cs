@@ -10,6 +10,7 @@ using PhoneBookDemo.Authorization.Users.Dto;
 using PhoneBookDemo.Editions;
 using PhoneBookDemo.Editions.Dto;
 using PhoneBookDemo.Features;
+using PhoneBookDemo.PhoneBook;
 using PhoneBookDemo.Test.Base;
 using Shouldly;
 using Xunit;
